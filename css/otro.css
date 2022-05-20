@@ -312,7 +312,7 @@ h1{
     font-size: 3rem;
     }
     .menu {
-        font-size: large;
+        font-size: medium;
     }    
     #contenedor{
         flex-direction: column;
@@ -348,7 +348,7 @@ h1{
         }
         
         .menu {
-            font-size: large;
+            font-size: medium;
         }
         #contenedor{
             flex-direction: column;
