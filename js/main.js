@@ -39,33 +39,80 @@ const templates={
         </div>
     </div>`,
     escribime:`
-            <div class="contact_form">
-                <div class="formulario">  
-                    <h3 align="center">Escribime!!!</h3>
-                    <form action="show_data.html" target="_blank" >
+    <div class="content">
 
-                    <label for="nombre">Nombre: <span class="obligatorio">*</span></label>
-                    <input type="text" id="nombre" name="firstname" placeholder="Your name.."  ><br>
-                  
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="lastname"  placeholder="Your lastname.."><br>
-            
-                    <label for="email">E-mail:</label>
-                    <input type="email"  name="email" ><br>
-            
-                    <label for="cel">Celular:</label>
-                    <input type="text"  name="cel" ><br>
-            
-                    <label>Comentarios:</label>
-                    <textarea name="comentario" rows="" ></textarea>
+    <div class="contact-wrapper animated bounceInUp">
+   
+    <div class="contact-form">
+            <h3>Contact us</h3>
+          
+            <form action="show_data.html"  @submit="checkForm">
+            <p v-if="errors">
+            <b>Please correct the following error(s):</b>
+            <ul>
+              <li v-for="error in errors">{{ error }}</li>
+            </ul>
+            </p>
+          
                     
-                    <input type="submit" class="submit" value="Enviar" >
-                    <br>
-                    <br>
-                    </form> 
-                </div>
-            </div>
+                <p>
+                    <label>Nombre *</label>
+                    <input v-model="nombre" type="text" name="nombre" required>
+                </p>
+                <p>
+                    <label>Apellido *</label>
+                    <input v-model="apellido" type="text" name="apellido" required>
+                </p>
+                <p>
+                    <label>Celular</label>
+                    <input v-model="celular" type="tel" name="celular">
+                </p>
+                <p>
+                    <label>E-Mail *</label>
+                    <input type="email" name="email" v-model="email" required>
+                </p>
+                <p class="block">
+                   <label>Mensaje</label> 
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+       
+    </div>
+
+</div>
             `,
+            escribime2:`
+            <div class="formulario">  
+                <h3 align="center">Escribime!!!</h3>
+                <form action="show_data.html" target="_blank" >
+
+                <label for="nombre">Nombre: <span class="obligatorio">*</span></label>
+                <input type="text" id="nombre" name="firstname" placeholder="Your name.."  ><br>
+              
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="lastname"  placeholder="Your lastname.."><br>
+        
+                <label for="email">E-mail:</label>
+                <input type="email"  name="email" ><br>
+        
+                <label for="cel">Celular:</label>
+                <input type="text"  name="cel" ><br>
+        
+                <label>Comentarios:</label>
+                <textarea name="comentario" rows="" ></textarea>
+                
+                <input type="submit" v-on:click="Alertar(2)" class="submit" value="Enviar" >
+                <br>
+                <br>
+                </form> 
+        </div>
+        `,
         prueba:`
         <section class="main">
             <div id="contenedor">             
@@ -88,6 +135,12 @@ const templates={
 var app=new Vue({
     el:"#app",
     data: {
+        errors: [2,2],
+        nombre: null,
+        apellido: null,
+        celular:null,
+        email: null,
+        pepe:1,
         view : 'home',
     },
     components: {
@@ -150,8 +203,28 @@ var app=new Vue({
             template: templates.galeria
         } ,
         escribime: {
+            methods:{
+                checkForm: function (e) {
+                    if (this.celular){
+                        let bcel=Number.isInteger(parseInt(this.celular));
+                      
+                        if (!bcel){
+                            alert("Atención, el celular debe ser una valor numérico");
+                        }
+                        else
+                            if(parseInt(this.celular)<999999999){
+                                alert("Atención, el celular debe constar de al menos 10 dígitos");
+                            }else
+                            {                    
+                                return true;
+                            }
+
+                    }
+                  e.preventDefault();
+                }
+              },
             props: [],
-            template: templates.escribime
+            template: templates.escribime 
         },
         delivery: {
             data:function () {return {
