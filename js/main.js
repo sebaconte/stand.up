@@ -20,16 +20,18 @@ const templates={
     </div>
         `,
     contact:`
+    <div id="contenedor">             
+    <div class="item2" >
         <div id="contact" class="container active">
             <h2>Contacto</h2>
-            <p>Envíame tus sugerenciasde recetas a mi correo: <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
-        </div>`,
+            <p>Podes escribirme si queres a : <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
+        </div>
+    </div>`,
     galeria:`
     <div id="contenedor">             
-            <div class="item2" >
+    <div id="logo-contenedor">
             <br>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         <div class="item3" >
         </div>
@@ -116,7 +118,7 @@ var app=new Vue({
         },
         contact: {
             data: function () {return {
-                mail:"oscarramos@gmail.com",
+                mail:"sebaconte@gmail.com",
             }},
 
             

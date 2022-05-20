@@ -325,6 +325,16 @@ h1{
     .item2{
         width:90% ;
     }
+    .contact_form{  
+        width: 80%; 
+        height: auto;
+        margin: 20px auto;
+        border-radius: 10px;  
+        padding-top: 0px;
+        padding-bottom: 0px;  
+        background-color:rgb(230, 230, 230);
+        padding-left: 20px; 
+      }
 
 }
     @media (min-width: 600px) and (max-width: 800px) {
