@@ -44,7 +44,7 @@ const templates={
     <div class="contact-wrapper animated bounceInUp">
    
     <div class="contact-form">
-            <h3>Contact us</h3>
+            <h3>Escribime</h3>
           
             <form action="show_data.html"  @submit="checkForm">
             <p v-if="errors">
