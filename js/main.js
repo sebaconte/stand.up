@@ -205,6 +205,7 @@ var app=new Vue({
         escribime: {
             methods:{
                 checkForm: function (e) {
+                    
                     if (this.celular){
                         let bcel=Number.isInteger(parseInt(this.celular));
                       
@@ -219,8 +220,9 @@ var app=new Vue({
                                 return true;
                             }
 
-                    }
-                  e.preventDefault();
+                    }else
+                        return true;
+                    e.preventDefault();
                 }
               },
             props: [],
