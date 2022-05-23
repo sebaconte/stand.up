@@ -20,13 +20,16 @@ const templates={
     </div>
         `,
     contact:`
-    <div id="contenedor">             
-    <div class="item2" >
-        <div id="contact" class="container active">
-            <h2>Contacto</h2>
-            <p>Podes escribirme si queres a : <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
+
+    <div id="contenedor">          
+    <br>   
+        <div class="item2" >
+            <div id="contact" >
+                <h2>Contacto</h2>
+                <p>Podes escribirme si queres a : <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
+            </div>
         </div>
-    </div>`,
+        </div>`,
     galeria:`
     <div id="contenedor">             
     <div id="logo-contenedor">
@@ -115,16 +118,15 @@ const templates={
         `,
         prueba:`
         <section class="main">
-            <div id="contenedor">             
+                       
                 <div class="content">
                     <br>
                     <h1>Proximos shows</h1>
-                    <div class="grilla">
+                    <div id="contenedor">  
                         <div class="tarjeta"  v-for="elemento in gatos"> 
                             <img v-bind:src="'assets/images/'+elemento.imagen" v-bind:alt="elemento.alt"/>
                             <h4>{{elemento.titulo}}</h4>
                             <p>{{elemento.texto}}</p>
-                        </div>
                     </div>
                 </div>
             </div>
