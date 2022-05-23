@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
    
@@ -10,24 +9,32 @@
  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<!--      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="css/otro.css">
     <title>Sebastián Contente Standup</title>
 </head>
 <body>
     <div id="app">
-        <div class="container"  >
+        <div class="container main-header"  >
             <header>
                 <h1>Seba Contente - Standup</h1>
                 <br>
                 <br>    
-                <nav class="anim">
+                    <nav class="anim">
+            <div class="topnav" id="myTopnav">
+
                     <a class="menu" @click="view = 'home' ">Home</a>
                     <a class="menu" @click="view = 'prueba'">Proximos Shows</a>
                     <a class="menu" @click="view = 'galeria'">Galeria</a>
                     <a class="menu" @click="view = 'escribime'">Consultas</a>
                     <a class="menu" @click="view = 'contact'">Contacto</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </div>
                 </nav>
+                
             </header>
         </div>
         <main>
