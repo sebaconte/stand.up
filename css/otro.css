@@ -103,7 +103,9 @@ header {
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0) 0 0 2rem;
     grid-column-end: span 4;
-    padding: 1rem;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .tarjeta img {
     border-radius: 50%;
