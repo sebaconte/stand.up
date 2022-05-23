@@ -125,8 +125,8 @@ const templates={
                     <div id="contenedor">  
                         <div class="tarjeta"  v-for="elemento in gatos"> 
                             <img v-bind:src="'assets/images/'+elemento.imagen" v-bind:alt="elemento.alt"/>
-                            <h4 align="center">{{elemento.titulo}}</h4>
-                            <p align="center">{{elemento.texto}}</p>
+                            <h4>{{elemento.titulo}}</h4>
+                            <p>{{elemento.texto}}</p>
                     </div>
                 </div>
             </div>
