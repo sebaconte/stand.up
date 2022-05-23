@@ -117,7 +117,13 @@ header {
     max-width: 20rem;
     width: 100%;
     margin-left: auto;
-    margin-right: auto;  }
+    margin-right: auto;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;  }
+    .tarjeta img:hover{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
   .tarjeta2 {
     border-radius: 0rem;
     box-shadow: rgba(0, 0, 0, 0) 0 0 2rem;
