@@ -9,7 +9,9 @@ const templates={
         <div id="contenedor">             
             <div class="item2" >
                 <h2 align="center">Quien soy?</h2>
-                <p align="left">Me llamo Sebastián Contente, si Contente, imaginate la presión: vas a ver a un comediante, y se llama Contente. 
+                <p align="left">Me llamo Sebastián Contente, si Contente, imaginate la presión: vas a ver a un comediante, 
+                y se llama Contente. Te tengo que hacer reir si o si, es como si vas a castrar a tu mascota y el veterinario es
+                de apellido Castro.
                 Llevo apenas 3 años con esta pasión que es el standup.
                 <br>Te invito a que me conozcas, por eso en este sitio vas a poder ver cuando actúo, donde actuo, y hasta como actúo. 
                 <br>Y por si te gusta lo que hago. te vas a poder contactar conmigo</p><br><br>                   </div>
