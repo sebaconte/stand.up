@@ -9,7 +9,7 @@ const templates={
         <div id="contenedor">             
             <div class="item2" >
                 <h2 align="center">Quien soy?</h2>
-                <p align="left">Me llamo Sebastián Contente, si Contente, imaginate la presión: vas a ver a un comediante, 
+                <p align="justify">Me llamo Sebastián Contente, si Contente, imaginate la presión: vas a ver a un comediante, 
                 y se llama Contente. Te tengo que hacer reir si o si, es como si vas a castrar a tu mascota y el veterinario es
                 de apellido Castro.
                 Llevo apenas 3 años con esta pasión que es el standup.
@@ -33,11 +33,12 @@ const templates={
         </div>
         </div>`,
     galeria:`
-    <div id="contenedor">             
-    <div id="logo-contenedor">
+    <section class="main">
+                       
+        <div class="content">
             <br>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="item3" >
         </div>
         <div class="item3" >
