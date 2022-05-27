@@ -127,6 +127,13 @@ var galeria={
         </div>
         <div class="item3" >
         </div>
+        <div class="item3" >
+        </div>
+        <div class="item3" >
+        </div>
+        <div class="tarjeta2">
+        <router-link to = "/" class="link"> Volver al home</router-link>
+    </div> 
     </div>`
 }
 var show = {
@@ -140,7 +147,12 @@ var show = {
                 <p>{{elemento.texto}}</p>
         </div>
     </div>
-</div>
+    <div id="contenedor">
+    <div class="tarjeta2">
+        <router-link to = "/" class="link"> Volver al home</router-link>
+    </div> 
+    </div>
+    </div>
 </section>`,
 data:function () {return {
                 
@@ -239,8 +251,13 @@ template:
             <div id="contact" >
                <br>
                 <h2 align="center">Contacto</h2>
-                <p>Podes escribirme si queres a : <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
+                <p align="center">Podes escribirme si queres a : <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
             </div>
+        </div>
+        <div id="contenedor">
+        <div class="tarjeta2">
+            <router-link to = "/" class="link"> Volver al home</router-link>
+        </div> 
         </div>
     </div>`
 ,
@@ -298,7 +315,11 @@ var escribime={
         </div>
        
     </div>
-
+    <div id="contenedor">
+    <div class="tarjeta2">
+        <router-link to = "/" class="link"> Volver al home</router-link>
+    </div> 
+    </div>
 </div>
             `,
 methods:{
