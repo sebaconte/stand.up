@@ -219,13 +219,13 @@ var home = {
         </div>
         <div id="contenedor" >
             <div class="tarjeta2">
-                <router-link to = "/shows"> Proximos Shows</router-link>
+                <router-link to = "/shows" class="link"> Proximos Shows</router-link>
             </div> 
             <div class="tarjeta2">
-                <router-link to = "/galeria"> Visita la galería</router-link>
+                <router-link to = "/galeria" class="link"> Visita la galería</router-link>
             </div> 
             <div class="tarjeta2">
-                <router-link to = "/escribime"> Escribime!!</router-link>
+                <router-link to = "/escribime" class="link"> Escribime!!</router-link>
             </div> 
         </div>
     </div>

@@ -135,7 +135,6 @@ header {
   .tarjeta2:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-      
   }
 .tarjeta img {
     border-radius: 50%;
@@ -187,6 +186,9 @@ text-align: center;
     float: none;
     border-bottom: 1px solid rgba(136, 136, 136, 0.2);
     align-items: baseline;
+}
+.link{
+    color: rgb(230, 230, 230);
 }
 .formulario{
     border-radius: 5px;
