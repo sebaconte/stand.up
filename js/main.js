@@ -218,15 +218,16 @@ var home = {
             en la galeria tenes partes de mis shows y ls mejores fotos (ponele que hay exceso de photoshop).</p><br><br>                   </div>
         </div>
         <div id="contenedor" >
-        <div class="tarjeta2">
-        <router-link to = "/shows"> Proximos Shows</router-link>
-        </div> 
-        <div class="tarjeta2">
-        <router-link to = "/galeria"> Visita la galería</router-link>
-        </div> 
-        <div class="tarjeta2">
-        <router-link to = "/escribime"> Escribime!!</router-link>
-        </div> 
+            <div class="tarjeta2">
+                <router-link to = "/shows"> Proximos Shows</router-link>
+            </div> 
+            <div class="tarjeta2">
+                <router-link to = "/galeria"> Visita la galería</router-link>
+            </div> 
+            <div class="tarjeta2">
+                <router-link to = "/escribime"> Escribime!!</router-link>
+            </div> 
+        </div>
     </div>
 </div>
     `,
