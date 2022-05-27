@@ -208,14 +208,13 @@ var home = {
   
     <div id="contenedor">             
         <div class="item2" >
-            <h2 align="center">Quien soy?</h2>
             <p align="justify">Me llamo Sebastián Contente, si Contente, imaginate la presión: vas a ver a un comediante, 
             y se llama Contente. Te tengo que hacer reir si o si, es como si vas a castrar a tu mascota y el veterinario es
             de apellido Castro.
             Llevo apenas 3 años con esta pasión que es el standup.
             <br>Te invito a que me conozcas, por eso en este sitio vas a poder ver cuando actúo, donde actúo, y hasta como actúo. 
             <br>Y si te gusta lo que hago, te vas a poder contactar conmigo, por eso
-            en la galeria tenes partes de mis shows y ls mejores fotos (ponele que hay exceso de photoshop).</p><br><br>                   </div>
+            en la galeria tenes partes de mis shows y las mejores fotos (ponele que hay exceso de photoshop).</p><br><br>                   </div>
         </div>
         <div id="contenedor" >
             <div class="tarjeta2">
