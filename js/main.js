@@ -316,6 +316,8 @@ var escribime={
        
     </div>
     <div id="contenedor">
+    </div>
+    <div id="contenedor">
     <div class="tarjeta2">
         <router-link to = "/" class="link"> Volver al home</router-link>
     </div> 
