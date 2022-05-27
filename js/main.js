@@ -16,6 +16,8 @@ const templates={
                        
         <div class="content">
             <br>
+            <h2>Galeria</h2>
+            <br>
            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="item3" >
@@ -120,7 +122,9 @@ var galeria={
     <section class="main">
                        
         <div class="content">
-            <br>
+        <br>
+        <h2>Galeria</h2>
+        <br>
            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="item3" >
