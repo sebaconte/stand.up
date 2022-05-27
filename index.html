@@ -23,11 +23,11 @@
                     <nav class="anim">
             <div class="topnav" id="myTopnav">
 
-                    <a class="active" @click="view = 'home' ">Home</a>
-                    <a class="menu" @click="view = 'prueba'">Proximos Shows</a>
-                    <a class="menu" @click="view = 'galeria'">Galeria</a>
-                    <a class="menu" @click="view = 'escribime'">Consultas</a>
-                    <a class="menu" @click="view = 'contact'">Contacto</a>
+                    <router-link to = "/" class="menu"> Home</router-link>
+                    <router-link to = "/shows" class="menu"> Proximos Shows</router-link>
+                    <router-link to = "/galeria" class="menu"> Galeria</router-link>
+                    <router-link to = "/escribime" class="menu"> Escribime</router-link>
+                    <router-link to = "/contacto" class="menu"> Contacto</router-link>
                     <a href="javascript:void(0);" class="icon" onclick="hamburguesa()">
                         <i class="fa fa-bars"></i>
                       </a>
@@ -38,7 +38,9 @@
         </div>
         <main>
             <div class="container">
-                <component :is="view"></component>
+                <router-view></router-view>
+                
+            
             </div>
         </main>
         <div class="footer">
@@ -46,16 +48,15 @@
                     aria-hidden="true"></i></a>
             <a class="redsoc" href="https://www.facebook.com/sebastiancontente" target="_blank"><i class="fa fa-facebook"
                     aria-hidden="true"></i></a>
-            <a class="redsoc" href="https://www.pinterest" target="_blank"><i class="fa fa-pinterest"
-                    aria-hidden="true"></i></a>
             <a class="redsoc" href="https://www.instagram.com/sebastiancontente/" target="_blank"><i
                     class="fa fa-instagram" aria-hidden="true"></i></a>
             <a class="redsoc" href="https://www.linkedin.com/in/sebastian-contente-765025b9/" target="_blank"><i
                     class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <p>Sebastian Contente 2022 </p>
+            <p class="redsoc2">Sebastian Contente 2022 </p>
         </div>
     </div>
     <script src="js/vue.js"></script>
+    <script src="js/vue-route.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
