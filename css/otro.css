@@ -65,7 +65,7 @@ header {
    /* border: 1px solid lightgray;*/
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto 3fr;
+    grid-template-rows: auto 2fr;
     justify-items: stretch;
     align-items: stretch;
     overflow: auto;
@@ -131,6 +131,7 @@ header {
     -webkit-transition: 0.5s linear;
     transition: 0.5s linear;
     font-size: large;
+
   }
   .tarjeta2:hover{
     -webkit-transform: scale(1.1);
@@ -224,6 +225,9 @@ h1{
 	margin:0px auto;
 	text-align:center;
     background-color: transparent ;/*rgb(230, 230, 230);*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .content img {
 	vertical-align:middle;
@@ -259,6 +263,28 @@ textarea{
     column-gap: 2rem;
     padding-bottom: 1rem;
 }
+
+#contenedorgal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+    flex-direction: row;
+    align-self: stretch;
+    display: flex;  
+    width: 100% ;
+    flex-wrap: wrap; 
+    background-color: transparent/* rgb(230, 230, 230)*/;
+    opacity: 1;
+    grid-column: 1/4;
+    grid-row: 1/5;
+    padding: auto;
+    column-gap: 2rem;
+    padding-bottom: 1rem;
+    padding: 1% 1% 1% 1%;
+}
+
 .galeria{
     background-color: transparent;
     box-shadow: #000;
@@ -282,10 +308,11 @@ textarea{
     display:flex ;
     align-items: center;
     align-content: center;
+    justify-content: center;
     flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
     flex-direction: row;
     height: 10rem;
-    width: 100%;
+    width: auto;
     border:  white 0px solid; margin: 2px;
 }
   /* Style the links inside the navigation bar */
@@ -312,10 +339,10 @@ textarea{
 @media (max-width: 600px)  {
     .container {
         grid-template-areas:
-        "header header"
+        "header"
         /* "sidebar sidebar"*/
-        "main main"
-        "footer footer";
+        "main "
+        "footer";
     }
     .grilla {
         grid-gap: 2rem 0;
@@ -363,7 +390,8 @@ textarea{
         "header"
         "main"
 /*        "sidebar sidebar"*/       
-        "footer";
+        "footer"; 
+
     }
     .grilla {
         grid-gap: 2rem 0;
@@ -478,7 +506,7 @@ textarea{
         }
         
         .submit{
-            background-color: gray;
+            background-color: rgb(216, 46, 46);
             border: 0px;
             width: 100%;
            
@@ -513,7 +541,7 @@ textarea{
         .contact-wrapper {
             box-shadow: 0 0 20px 0  transparent;
             background-color: transparent;
-
+            width: 50%;
             margin: auto;
         }
         
@@ -567,7 +595,7 @@ textarea{
         
         .contact-form form button:hover,
         .contact-form form button:focus {
-            background: #5d5a5a;
+            background: #FB6542;
             color: #fff;
             transition: background-color 1s ease-out;
             outline: 0;
@@ -676,4 +704,86 @@ header{
 .redsoc2{
     color:#344d90;
     font-size: large;
+}
+.marco_foto{ 
+    position: relative; 
+    width: 100%;                   /* ancho de la foto */ 
+    width: 100%;                   /* ancho de la foto */ 
+    border:1px transparent #FF0000;         /* ancho del borde - grosor - color */ 
+    max-width: 300px;
+    max-height: 300px;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;} 
+.centrado{
+    justify-content: center;
+    align-items: center;
+}
+
+/* GALLERY */
+
+
+.wrapper {
+    display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: max-content;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: stretch;
+  align-self: start;
+   
+    
+  }
+  
+   
+  .grid-item1 {
+    text-align: center;
+    border: black 5px solid;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 3;
+  }
+  
+  .grid-item2 {
+  background-color: whitesmoke;
+  color: white;
+  padding: 1rem;
+    
+  }
+  
+  .grid-item2 img{
+      margin: auto;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper {
+        display: grid;
+      padding: 1rem;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(2, 300px);
+      
+    }
+    .contact-wrapper {
+        box-shadow: 0 0 20px 0  transparent;
+        background-color: transparent;
+        width: 75%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: grid;
+      padding: 1rem;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(1, 400px);
+    }
+    .contact-wrapper {
+        box-shadow: 0 0 20px 0  transparent;
+        background-color: transparent;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
 }

@@ -1,144 +1,212 @@
 
-const templates={
-    contact:`
 
-    <div id="contenedor">          
-    <br>   
-        <div class="item2" >
-            <div id="contact" >
-                <h2>Contacto</h2>
-                <p>Podes escribirme si queres a : <a :href=  ' "mailto:"+mail'   >{{mail}}</a></p>       
-            </div>
-        </div>
-        </div>`,
-    galeria:`
+var galeria2={
+    template:`
     <section class="main">
-                       
-        <div class="content">
-            <br>
+           <br>
             <h2>Galeria</h2>
             <br>
-           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="item3" >
-        </div>
-        <div class="item3" >
-        </div>
-    </div>`,
-    escribime:`
-    <div class="content">
-
-    <div class="contact-wrapper animated bounceInUp">
-   
-    <div class="contact-form">
-            <h3>Escribime</h3>
-          
-            <form action="show_data.html"  @submit="checkForm">
-            <p v-if="errors">
-            <b>Please correct the following error(s):</b>
-            <ul>
-              <li v-for="error in errors">{{ error }}</li>
-            </ul>
-            </p>
-          
-                    
-                <p>
-                    <label>Nombre *</label>
-                    <input v-model="nombre" type="text" name="nombre" required>
-                </p>
-                <p>
-                    <label>Apellido *</label>
-                    <input v-model="apellido" type="text" name="apellido" required>
-                </p>
-                <p>
-                    <label>Celular</label>
-                    <input v-model="celular" type="tel" name="celular">
-                </p>
-                <p>
-                    <label>E-Mail *</label>
-                    <input type="email" name="email" v-model="email" required>
-                </p>
-                <p class="block">
-                   <label>Mensaje</label> 
-                    <textarea name="message" rows="3"></textarea>
-                </p>
-                <p class="block">
-                    <button>
-                        Enviar
-                    </button>
-                </p>
-            </form>
-        </div>
-       
-    </div>
-
-</div>
-            `,
-            escribime2:`
-            <div class="formulario">  
-                <h3 align="center">Escribime!!!</h3>
-                <form action="show_data.html" target="_blank" >
-
-                <label for="nombre">Nombre: <span class="obligatorio">*</span></label>
-                <input type="text" id="nombre" name="firstname" placeholder="Your name.."  ><br>
-              
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="lastname"  placeholder="Your lastname.."><br>
-        
-                <label for="email">E-mail:</label>
-                <input type="email"  name="email" ><br>
-        
-                <label for="cel">Celular:</label>
-                <input type="text"  name="cel" ><br>
-        
-                <label>Comentarios:</label>
-                <textarea name="comentario" rows="" ></textarea>
-                
-                <input type="submit" v-on:click="Alertar(2)" class="submit" value="Enviar" >
-                <br>
-                <br>
-                </form> 
-        </div>
-        `,
-        prueba:`
-        <section class="main">
-                       
-                <div class="content">
-                    <br>
-                    <h1>Proximos shows</h1>
-                    <div id="contenedor">  
-                        <div class="tarjeta"  v-for="elemento in gatos"> 
-                            <img v-bind:src="'assets/images/'+elemento.imagen" v-bind:alt="elemento.alt"/>
-                            <h4>{{elemento.titulo}}</h4>
-                            <p>{{elemento.texto}}</p>
-                    </div>
+            <p></p>
+               
+        <div class="content">
+            
+            <div id="contenedorgal" >
+            <ul class="gallery">
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://38.media.tumblr.com/222f39f4520d55100feff7237861b373/tumblr_n8gxs0oWZ21st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Chanante ipsum dolor sit amet</h3>
+                    <p>Chanante ipsum dolor sit amet, nui, pepino en la mano ut gañán saepe. Nostrud bonico del tó, nisi ut piticli magna bizcoché ex ut ex minim ex zagal adipisicing.</p>
+                    <time>12/09/2014</time>
                 </div>
-            </div>
-    </section>
-    `
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://31.media.tumblr.com/2d3f0d31590dbd09283e969bf8511a71/tumblr_naj3hqGqeh1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Ut cacahué nianoniano</h3>
+                    <p>Exercitation ullamco minim eveniet adipisicing. Ad ad tempor, labore exercitation nostrud, magna, incididunt sed cobete. Minim atiendee asobinao exercitation, nisi ullamco nostrud fresquete. Exercitation enim gañán soooy crossoverr veniam quis ex ullamco nostrud ex cascoporro ut nui consectetur. Adipisicing enim quis nostrud nostrud et síberet tempor ex.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://38.media.tumblr.com/c07be931db3413ff50fb452346d52c8f/tumblr_n5e5tyYJkE1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Chanante ipsum dolor sit amet</h3>
+                    <p>Horcate nostrud bufonesco tontaco monguer Guaper sed ut incididunt ut exercitation gatete páharo. .</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://31.media.tumblr.com/d77e21ed167c2125627b210b48e23f81/tumblr_na0kw25OtD1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Cabore exercitation nostrud</h3>
+                    <p>Exercitation ullamco minim eveniet adipisicing. Ad ad tempor, labore exercitation nostrud, magna, incididunt sed cobete. Minim atiendee asobinao exercitation, nisi ullamco nostrud fresquete. Exercitation enim gañán soooy crossoverr veniam quis ex ullamco nostrud ex cascoporro ut nui consectetur.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://33.media.tumblr.com/c93e3fc500d1ff310d7755fd13276a58/tumblr_n7yhiyUa3l1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Minim atiendee asobinao exercitation</h3>
+                    <p>Chanante ipsum dolor sit amet, nui, pepino en la mano ut gañán saepe. Nostrud bonico del tó, nisi ut piticli magna bizcoché ex ut ex minim ex zagal adipisicing.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://31.media.tumblr.com/bddaeb8fe12eda6bb40cf6a0a18d9efa/tumblr_n8zm8ndGiY1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Ceniam quis ex ullamco nostrud ex cascoporro</h3>
+                    <p>Chanante ipsum dolor sit amet, nui, pepino en la mano ut gañán saepe. Nostrud bonico del tó.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://38.media.tumblr.com/273167b30c7af4437dcf14ed894b0768/tumblr_n5waxesawa1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3> pepino en la mano ut gañán saepe ipsum dolor sit amet</h3>
+                    <p>Ad ad tempor, labore exercitation nostrud, magna, incididunt sed cobete. Minim atiendee asobinao exercitation, nisi ullamco nostrud fresquete. Exercitation enim gañán soooy crossoverr veniam quis ex ullamco nostrud ex cascoporro ut nui consectetur.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://33.media.tumblr.com/f6c67ec2821a91051e4175f8a102e1e2/tumblr_n6rzpcsMk41st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Nostrud bonico del tó</h3>
+                    <p>Nui, pepino en la mano ut gañán saepe. Nostrud bonico del tó, nisi ut piticli magna bizcoché ex ut ex minim ex zagal adipisicing. Chanante ipsum dolor sit amet, nui, pepino en la mano ut gañán saepe.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <figure>
+                        <img src="http://38.media.tumblr.com/c07be931db3413ff50fb452346d52c8f/tumblr_n5e5tyYJkE1st5lhmo1_1280.jpg" />
+                    </figure>
+                    <h3>Cabore exercitation nostrud</h3>
+                    <p>Exercitation ullamco minim eveniet adipisicing. Ad ad tempor, labore exercitation nostrud, magna, incididunt sed cobete. Minim atiendee asobinao exercitation, nisi ullamco nostrud fresquete. Exercitation enim gañán soooy crossoverr veniam quis ex ullamco nostrud ex cascoporro ut nui consectetur.</p>
+                    <time>12/09/2014</time>
+                </div>
+            </li>
+        </ul> 
+        <div class="tarjeta2">
+                <router-link to = "/" class="link"> Volver al home</router-link>
+            </div> 
+            
+            
+        </div>
+    </section>`
+    ,
+    data:function () {return {
+            contenido:[
+                    {
+                        tipo:"video",
+                        src:"https://www.youtube.com/embed/bzoJHsybxn8",
+                        titulo: "Domingo 26 de Junio de 2022",
+                        
+                    },
+                    {
+                        tipo:"foto",
+                        src:"sebas01.jpeg",
+                        titulo: "Domingo 26 de Junio de 2022"
+                    }
+                ]
+        }
+    },
+    props: []
 }
+
+
 var galeria={
     template:`
     <section class="main">
-                       
+           <br>
+            <h2>Galeria</h2>
+            <br>
+            <p></p>
+               
         <div class="content">
-        <br>
-        <h2>Galeria</h2>
-        <br>
-           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bzoJHsybxn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="wrapper" >
+
+                <div v-for="elemento in contenido" class="grid-item2">
+                    <div v-if="elemento.tipo=='video'" class="tarjeta1">     
+                        <iframe   width="100%" height="100%" v-bind:src="elemento.src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>{{elemento.titulo}}</p>
+                    </div>
+                    <div class="tarjeta1" v-else>        
+                        <img v-if="elemento.tipo=='foto'" v-bind:src="'assets/images/'+elemento.src" />
+                        <p>{{elemento.titulo}}</p>
+                    </div>
+                </div>
+            </div>   
+                
+            <div id="contenedor">
+            <div class="tarjeta2">
+                <router-link to = "/" class="link"> Volver al home</router-link>
+            </div> 
+            </div>
+                
         </div>
-        <div class="item3" >
-        </div>
-        <div class="item3" >
-        </div>
-        <div class="item3" >
-        </div>
-        <div class="item3" >
-        </div>
-        <div class="tarjeta2">
-        <router-link to = "/" class="link"> Volver al home</router-link>
-    </div> 
-    </div>`
+        
+    </section>`
+    ,
+    data:function () {return {
+            contenido:[
+                    {
+                        tipo:"video",
+                        src:"https://www.youtube.com/embed/bzoJHsybxn8",
+                        titulo: "Maratón Vale Reir"
+                        
+                    },
+                    {
+                        tipo:"foto",
+                        src:"sebas01.jpeg",
+                        titulo: "Kaputt en Casa Jache"
+                    },
+                    {
+                        tipo:"foto",
+                        src:"sebas02.jpeg",
+                        titulo: "Kaputt en Casa Jache"
+                    },
+                    {
+                        tipo:"foto",
+                        src:"sebas03.jpeg",
+                        titulo: "Kaputt en Casa Jache"
+                    },
+                    {
+                        tipo:"foto",
+                        src:"sebas.jpg",
+                        titulo: "Kaputt en Casa Jache"
+                    }, {
+                        tipo:"foto",
+                        src:"sebas03.jpeg",
+                        titulo: "Kaputt en Casa Jache"
+                    },
+                    {
+                        tipo:"video",
+                        src:"https://www.youtube.com/embed/bzoJHsybxn8",
+                        titulo: "Maratón Vale Reir"
+                        
+                    }
+                ]
+        }
+    },
+    props: []
 }
 var show = {
 	template: `<section class="main"><div class="content">
@@ -268,9 +336,6 @@ template:
 data: function () {return {
     mail:"sebaconte@gmail.com",
     }   }
-
-
-
 }
 var escribime={
     template:`
@@ -379,28 +444,7 @@ var app=new Vue({
     ,components: {
       
         sgaleria: {
-            data:function () {return {
-                
-                locales:[
-                    {nombre:"Sucursal once",
-                    direccion:"Rivadavia 150 - CABA",
-                    link:"https://youtu.be/bzoJHsybxn8",
-                    iframe: "https://youtu.be/bzoJHsybxn8"   
-                    },
-                    {nombre:"Sucursal Colegiales",
-                    direccion:"Federico Lacroze 2702 - CABA",
-                    link:"https://youtu.be/bzoJHsybxn8",
-                    iframe: "https://youtu.be/bzoJHsybxn8"   
-                    }   ,
-                    {nombre:"Sucursal Chacarita",
-                    direccion:"Federico Lacroze 3800 - CABA",
-                    link:"https://youtu.be/bzoJHsybxn8",
-                    iframe: "https://youtu.be/bzoJHsybxn8"   
-                    }
-                ]
-            }},
-            props: [],
-            template: templates.galeria
+ 
         } ,
         rescribime: {
             methods:{
@@ -426,7 +470,6 @@ var app=new Vue({
                 }
               },
             props: [],
-            template: templates.escribime 
         },
         delivery: {
             data:function () {return {
@@ -450,7 +493,6 @@ var app=new Vue({
 
             }},
             props: [],
-            template: templates.delivery
         },
         show: {
             props: [],methods: {
