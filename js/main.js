@@ -192,16 +192,6 @@ var galeria={
                         tipo:"foto",
                         src:"sebas.jpg",
                         titulo: "Kaputt en Casa Jache"
-                    }, {
-                        tipo:"foto",
-                        src:"sebas03.jpeg",
-                        titulo: "Kaputt en Casa Jache"
-                    },
-                    {
-                        tipo:"video",
-                        src:"https://www.youtube.com/embed/bzoJHsybxn8",
-                        titulo: "Maratón Vale Reir"
-                        
                     }
                 ]
         }
