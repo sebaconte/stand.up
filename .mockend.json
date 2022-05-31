@@ -1,0 +1,33 @@
+[
+                    {
+                        "tipo":"video",
+                        "src":"https://www.youtube.com/embed/bzoJHsybxn8",
+                        "titulo": "Maratón Vale Reir"
+                        
+                    },
+                    {
+                        "tipo":"foto",
+                        "src":"sebas01.jpeg",
+                        "titulo": "Kaputt en Casa Jache"
+                    },
+                    {
+                        "tipo":"foto",
+                        "src":"sebas02.jpeg",
+                        "titulo": "Kaputt en Casa Jache"
+                    },
+                    {
+                        "tipo":"foto",
+                        "src":"sebas03.jpeg",
+                        "titulo": "Kaputt en Casa Jache"
+                    },
+                    {
+                        "tipo":"foto",
+                        "src":"sebas.jpg",
+                        "titulo": "Kaputt en Casa Jache"
+                    },
+                    {
+                        "tipo":"foto",
+                        "src":"evapapa.jpg",
+                        "titulo": "Kaputt en Casa Jache"
+                    }
+                ]

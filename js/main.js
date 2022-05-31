@@ -192,6 +192,11 @@ var galeria={
                         tipo:"foto",
                         src:"sebas.jpg",
                         titulo: "Kaputt en Casa Jache"
+                    },
+                    {
+                        tipo:"foto",
+                        src:"evapapa.jpg",
+                        titulo: "Kaputt en Casa Jache"
                     }
                 ]
         }
